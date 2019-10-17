@@ -11,16 +11,16 @@ export default function BasicRoute() {
     const testData = {
         title: {
             href: '',
-            title: 'title',
+            text: 'title',
         },
         content: [
             {
                 href: '',
-                title: 'item1',
+                text: 'item1',
             },
             {
                 href: '',
-                title: 'item2',
+                text: 'item2',
             },
         ]
     }

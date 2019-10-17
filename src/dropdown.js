@@ -2,11 +2,14 @@ import React from 'react';
 // import ReactDOM from 'react-dom';
 
 export function DropdownItem(props) {
-    console.log('local prop' + props)
+    window.console.log('local prop' + props);
+    window.props = props;
+    window.titles = [];
     const title = props.value.title;
-    const content = props.value.content.map(item => (
-        <li key={item}><a href={item.href}>{item.text}</a></li>
-    ));
+    const content = props.value.content.map(item => {
+        window.titles.push(item.text);
+        return <li key={item}><a href={item.href}>{item.text}</a></li>;
+    });
     return (
         <ul>
             <li>
