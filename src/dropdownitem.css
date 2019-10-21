@@ -1,0 +1,20 @@
+.itemlist {
+    display: block;
+}
+.itemlistgone {
+    display: none;
+}
+
+div ul li{
+    list-style-type: none;
+    padding-left: 1.6rem;
+    background: aqua;
+    height: 2rem;
+}
+div ul li:hover{
+    background: steelblue;
+}
+
+a {
+    text-decoration:none   
+}

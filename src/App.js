@@ -4,8 +4,8 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
-import  Game  from "./game"
-import { DropdownItem } from "./dropdown"
+import Game from "./game"
+import DropdownItem  from "./dropdownitem"
 
 export default function BasicRoute() {
     const testData = {
@@ -24,6 +24,10 @@ export default function BasicRoute() {
             },
         ]
     }
+
+    const testHeader = [
+        testData,testData,
+    ];
     return (
         <Router>
             <Switch>
