@@ -1,0 +1,13 @@
+html{
+    font-size: 10px;
+    margin: 0rem;
+    padding-top: 0rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+div>img{
+    width: 100%;
+    height: auto;
+    display: block;
+}

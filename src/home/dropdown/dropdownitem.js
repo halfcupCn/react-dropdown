@@ -18,7 +18,7 @@ export default class DropdownItem extends React.Component {
         let vis = this.state.showItems ? 'itemlist' : 'itemlistgone';
         return (
             <div onMouseOver={() => this.handleHover(true)} onMouseOut={() => this.handleHover(false)}>
-                <p className='border2'>
+                <p>
                     <a href={this.state.title.href}>{this.state.title.text}</a>
                 </p>
                 <ul className={vis}>

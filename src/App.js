@@ -4,38 +4,14 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
-import Game from "./game"
-import DropdownItem  from "./dropdownitem"
+import Home from "./home/home";
 
 export default function BasicRoute() {
-    const testData = {
-        title: {
-            href: '',
-            text: 'title',
-        },
-        content: [
-            {
-                href: '',
-                text: 'item1',
-            },
-            {
-                href: '',
-                text: 'item2',
-            },
-        ]
-    }
-
-    const testHeader = [
-        testData,testData,
-    ];
     return (
         <Router>
             <Switch>
                 <Route exact path="/">
-                    <div><Game /><br /><a href='./dropdown'>dropdown</a></div>
-                </Route>
-                <Route path="/dropdown">
-                    <DropdownItem value={testData} />
+                    <Home/>
                 </Route>
             </Switch>
         </Router>
